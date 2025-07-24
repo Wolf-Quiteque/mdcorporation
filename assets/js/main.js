@@ -327,6 +327,44 @@
 		});
 	}
 
+	if ($(".tj-brand-slider .swiper-container").length > 0) {
+		let brandCarousel = new Swiper(".tj-brand-slider .swiper-container", {
+			slidesPerView: 3, /* Changed to 3 for larger images */
+			spaceBetween: 40, /* Increased space for larger images */
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1, /* Changed to 1 for very small screens */
+					spaceBetween: 15,
+				},
+				576: {
+					slidesPerView: 2, /* Changed to 2 for small screens */
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2, /* Changed to 2 for medium screens */
+					spaceBetween: 30,
+				},
+				992: {
+					slidesPerView: 3, /* Changed to 3 for larger screens */
+					spaceBetween: 40,
+				},
+			},
+		});
+	}
+
 	/* ------------- Project Slider  Js -------------*/
 	if ($(".project-slider").length > 0) {
 		let project = new Swiper(".project-slider", {
@@ -1166,7 +1204,7 @@
 		var wow = new WOW({
 			boxClass: "wow", // default
 			animateClass: "animated", // default
-			offset: 80, // default
+			offset: 0, // Changed to 0 to make animations load faster
 			callback: function (box) {
 				// Ensure visibility when animation starts
 				$(box).css("visibility", "visible");

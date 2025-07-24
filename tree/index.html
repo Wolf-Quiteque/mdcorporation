@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD CORPORATION | Links</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(270deg, #ffffff, #e6f0ff, #d9e6ff);
+      background-size: 300% 300%;
+      animation: Gradient 15s ease infinite;
+    }
+    @keyframes Gradient {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+    .glass-link {
+      backdrop-filter: blur(12px);
+      background: #1e1cc8;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      color: white;
+    }
+    .glass-link:hover {
+      transform: translateY(-3px);
+      background: #1a18b5;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6">
+  <div class="flex flex-col items-center mb-10">
+    <!-- Logo com tamanho ajustado -->
+    <img src="logo.png" alt="MD Corporation Logo" class="w-40 h-40 md:w-48 md:h-48 object-contain rounded-full shadow-md">
+  </div>
+
+  <div class="w-full max-w-md space-y-4">
+    <a href="https://www.mdcorporationgroup.com/" target="_blank" class="glass-link flex items-center justify-center gap-3 w-full px-8 py-4 text-lg rounded-xl">
+      <i data-lucide="globe" class="w-5 h-5"></i> Site Oficial
+    </a>
+    <a href="https://wa.me/94525443" target="_blank" class="glass-link flex items-center justify-center gap-3 w-full px-8 py-4 text-lg rounded-xl">
+      <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+    </a>
+    <a href="https://www.instagram.com/md_corporation_5/" target="_blank" class="glass-link flex items-center justify-center gap-3 w-full px-8 py-4 text-lg rounded-xl">
+      <i data-lucide="instagram" class="w-5 h-5"></i> Instagram
+    </a>
+    <a href="https://in.linkedin.com/company/md-corporation" target="_blank" class="glass-link flex items-center justify-center gap-3 w-full px-8 py-4 text-lg rounded-xl">
+      <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+    </a>
+  </div>
+
+  <footer class="text-sm text-[#1e1cc8] mt-8 font-medium">
+    &copy; 2025 MD CORPORATION. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
